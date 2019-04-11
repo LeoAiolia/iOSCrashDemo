@@ -37,6 +37,7 @@
 }
 
 - (void)pushTestAnimation:(BOOL)animated title:(NSString*)title {
+  // 可将storyboard里的 ISCustomNavigationController 换成 UINavigationController 点击两个按钮，并返回看看是否会崩溃。
   SecondViewController* secondVC = [[SecondViewController alloc] init];
   secondVC.navigationItem.title = title;
   [self.navigationController pushViewController:secondVC animated:animated];
